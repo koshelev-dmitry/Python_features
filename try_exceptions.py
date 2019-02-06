@@ -1,4 +1,4 @@
-def test(var):
+def foo(var):
     try:
         print(var)
         # 1 + print(var)
@@ -7,7 +7,13 @@ def test(var):
     else:
         1 + print('Why do you print me?') + 1
     finally:
-        return 'Opa 2'
+        return
 
 
-print(test("Hello"))
+print(foo("Hello"))
+
+
+"""
+>> Why do you print me? 
+no raise of errors
+"""
